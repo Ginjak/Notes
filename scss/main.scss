@@ -204,13 +204,13 @@ img {
               transition: margin-left calc(#{$two-ms} * 3) ease-in-out;
             }
             &:nth-child(3) {
-              transition: margin-left calc(#{$two-ms} * 3.5) ease-in-out;
-            }
-            &:nth-child(4) {
               transition: margin-left calc(#{$two-ms} * 4) ease-in-out;
             }
+            &:nth-child(4) {
+              transition: margin-left calc(#{$two-ms} * 5) ease-in-out;
+            }
             &:nth-child(5) {
-              transition: margin-left calc(#{$two-ms} * 5.5) ease-in-out;
+              transition: margin-left calc(#{$two-ms} * 6) ease-in-out;
             }
             &:hover {
               color: $bg-bright;

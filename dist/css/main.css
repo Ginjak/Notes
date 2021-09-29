@@ -192,11 +192,11 @@ img {
         #nav-bar .nav-container .nav-hamburger .overlay a:nth-child(2) {
           transition: margin-left calc(0.2s * 3) ease-in-out; }
         #nav-bar .nav-container .nav-hamburger .overlay a:nth-child(3) {
-          transition: margin-left calc(0.2s * 3.5) ease-in-out; }
-        #nav-bar .nav-container .nav-hamburger .overlay a:nth-child(4) {
           transition: margin-left calc(0.2s * 4) ease-in-out; }
+        #nav-bar .nav-container .nav-hamburger .overlay a:nth-child(4) {
+          transition: margin-left calc(0.2s * 5) ease-in-out; }
         #nav-bar .nav-container .nav-hamburger .overlay a:nth-child(5) {
-          transition: margin-left calc(0.2s * 5.5) ease-in-out; }
+          transition: margin-left calc(0.2s * 6) ease-in-out; }
         #nav-bar .nav-container .nav-hamburger .overlay a:hover {
           color: #ecb607; }
     #nav-bar .nav-container .nav-hamburger .toggler:checked ~ .overlay {
