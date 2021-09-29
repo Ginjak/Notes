@@ -47,7 +47,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   background: #fff;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 ul {
   list-style: none; }
