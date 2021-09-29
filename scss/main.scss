@@ -245,18 +245,19 @@ img {
       .hero-1 {
         position: relative;
         width: 100%;
-        min-height: 500px;
+        min-height: 550px;
         background: url("../img/img_1.jpg") no-repeat center center/cover;
         background-position: 50% 70%;
         @include flexbox(column, center, center);
         color: $txt-light-color;
         z-index: -1;
         h3 {
-          font-size: 2rem;
+          padding: 0 1.5rem;
+          font-size: 1.5rem;
           margin-bottom: 1rem;
         }
         h1 {
-          font-size: 4rem;
+          font-size: 3rem;
         }
 
         .dark-overlay {
@@ -269,14 +270,40 @@ img {
         }
       }
       .container {
-        width: 95%;
         border-bottom: 1px solid #dfdfdf;
+        margin-bottom: 2rem;
 
         p {
-          font-size: 1.5rem;
-          line-height: 1.5;
+          font-size: 1.2rem;
+          line-height: 1.4;
+          padding: 2em 1em;
         }
       }
+    }
+  }
+}
+
+// Home Section B
+
+#home {
+  &-b {
+    h3 {
+      padding: 0 1.5rem;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      padding: 0em 1em;
+      padding-bottom: 2em;
+    }
+
+    .image {
+      width: 90%;
+      max-height: 300px;
+      object-fit: fill;
+      margin: auto;
     }
   }
 }

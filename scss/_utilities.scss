@@ -4,6 +4,8 @@
   overflow: hidden;
 }
 
+// Text classes
+
 .txt-up {
   text-transform: uppercase;
 }
@@ -17,6 +19,8 @@
 .txt-bold {
   font-weight: bold;
 }
+
+// Padding top and bottom (Y axis)
 
 .py-1 {
   padding: 1rem 0;
@@ -34,6 +38,26 @@
   padding: 4rem 0;
 }
 
+// Padding left and right (X axis)
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.px-4 {
+  padding: 0 4rem;
+}
+
+// Margin top and bottom (Y axis)
+
 .my-1 {
   margin: 1rem 0;
 }
@@ -48,4 +72,21 @@
 
 .my-4 {
   margin: 4rem 0;
+}
+
+// Margin left and right (X axis)
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.mx-4 {
+  margin: 0 4rem;
 }

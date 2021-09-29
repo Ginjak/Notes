@@ -27,6 +27,18 @@
 .py-4 {
   padding: 4rem 0; }
 
+.px-1 {
+  padding: 0 1rem; }
+
+.px-2 {
+  padding: 0 2rem; }
+
+.px-3 {
+  padding: 0 3rem; }
+
+.px-4 {
+  padding: 0 4rem; }
+
 .my-1 {
   margin: 1rem 0; }
 
@@ -38,6 +50,18 @@
 
 .my-4 {
   margin: 4rem 0; }
+
+.mx-1 {
+  margin: 0 1rem; }
+
+.mx-2 {
+  margin: 0 2rem; }
+
+.mx-3 {
+  margin: 0 3rem; }
+
+.mx-4 {
+  margin: 0 4rem; }
 
 * {
   margin: 0;
@@ -217,7 +241,7 @@ img {
     #home-a .wraper .hero-1 {
       position: relative;
       width: 100%;
-      min-height: 500px;
+      min-height: 550px;
       background: url("../img/img_1.jpg") no-repeat center center/cover;
       background-position: 50% 70%;
       display: flex;
@@ -227,10 +251,11 @@ img {
       color: #fff;
       z-index: -1; }
       #home-a .wraper .hero-1 h3 {
-        font-size: 2rem;
+        padding: 0 1.5rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem; }
       #home-a .wraper .hero-1 h1 {
-        font-size: 4rem; }
+        font-size: 3rem; }
       #home-a .wraper .hero-1 .dark-overlay {
         position: absolute;
         width: 100%;
@@ -239,8 +264,26 @@ img {
         opacity: 0.5;
         z-index: -2; }
     #home-a .wraper .container {
-      width: 95%;
-      border-bottom: 1px solid #dfdfdf; }
+      border-bottom: 1px solid #dfdfdf;
+      margin-bottom: 2rem; }
       #home-a .wraper .container p {
-        font-size: 1.5rem;
-        line-height: 1.5; }
+        font-size: 1.2rem;
+        line-height: 1.4;
+        padding: 2em 1em; }
+
+#home-b h3 {
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+
+#home-b p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  padding: 0em 1em;
+  padding-bottom: 2em; }
+
+#home-b .image {
+  width: 90%;
+  max-height: 300px;
+  object-fit: fill;
+  margin: auto; }
