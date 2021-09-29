@@ -203,7 +203,8 @@ img {
       top: 70px;
       left: 0;
       bottom: 0;
-      right: 0; }
+      right: 0;
+      overflow-y: hidden; }
     #nav-bar .nav-container .nav-hamburger .toggler:checked ~ .overlay > a {
       margin-left: 0; }
 
