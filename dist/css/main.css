@@ -215,7 +215,7 @@ img {
       position: relative;
       width: 100%;
       min-height: 500px;
-      background: url("/dist/img/Home/img_1.jpg") no-repeat center center/cover;
+      background: url("img/Home/img_1.jpg") no-repeat center center/cover;
       background-position: 50% 70%;
       display: flex;
       flex-direction: column;
