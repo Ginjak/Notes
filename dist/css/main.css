@@ -179,7 +179,7 @@ img {
       flex-direction: column;
       justify-content: top;
       align-items: left;
-      overflow: hidden;
+      overflow-x: hidden;
       transition: left 0.2s ease-in; }
       #nav-bar .nav-container .nav-hamburger .overlay a {
         color: #fff;
