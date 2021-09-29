@@ -1,0 +1,280 @@
+@import "config";
+@import "utilities";
+// General styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: $txt-light-color;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h3 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h3 {
+  font: 1.5rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+// test
+#nav {
+  &-bar {
+    position: fixed;
+    width: 100%;
+    background: $txt-dark-color;
+
+    // Navigation container with main nav and hamburger
+    .nav-container {
+      position: relative;
+      max-width: 1280px;
+      margin: auto;
+      height: 70px;
+      @include flexbox(row, space-between, center);
+
+      // Navigation - Logo on the left
+      #logo {
+        width: 150px;
+        height: auto;
+        padding: 0 1rem;
+      }
+
+      // Main nav menu
+      .nav-menu {
+        @include flexbox(row, center, center);
+        display: none;
+
+        // Nav menu list items
+        ul {
+          @include flexbox(row, center, center);
+
+          li a {
+            color: $txt-light-color;
+            padding: 0 1rem;
+            transition: color $two-ms;
+            &:hover {
+              color: $bg-bright;
+            }
+          }
+        }
+
+        // Nav menu social icons
+        .social {
+          color: $txt-light-color;
+          font-size: 1.4rem;
+          a {
+            padding: 0 0.3rem;
+            color: $txt-light-color;
+            &:first-child:hover {
+              color: #1da1f2;
+            }
+            &:nth-child(2):hover {
+              color: #bc2a8d;
+            }
+            &:nth-child(3):hover {
+              color: #4267b2;
+            }
+          }
+        }
+      }
+
+      // Nav hamburger menu
+      .nav-hamburger {
+        //Setting check box to right corner of a screen
+        .toggler {
+          position: absolute;
+          top: 5px;
+          right: 16px;
+          width: 60px;
+          height: 60px;
+          z-index: 5;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        // Setting hamburger lines to same size and to the same positon as checkbox
+        .lines {
+          position: absolute;
+          top: 5px;
+          right: 16px;
+          height: 60px;
+          width: 60px;
+          padding: 0 5px;
+          @include flexbox(column, center, center);
+          z-index: 4;
+
+          // Middle line - main line
+          div {
+            position: relative;
+            width: 100%;
+            height: 3px;
+            background: $txt-light-color;
+            transition: all 0.2s ease;
+
+            // Top line
+            &:before {
+              content: "";
+              position: absolute;
+              top: -15px;
+              width: 100%;
+              height: 3px;
+              background: $txt-light-color;
+              transition: all 0.1s;
+            }
+            // Bottom line
+            &:after {
+              content: "";
+              position: absolute;
+              top: 15px;
+              width: 100%;
+              height: 3px;
+              background: $txt-light-color;
+              transition: all 0.2s ease;
+            }
+          }
+        }
+
+        // Animation of a hamburger menu
+
+        // Top line drops down on main line
+        .toggler:checked ~ .lines > div:before {
+          top: 0;
+        }
+
+        // Bottom line goes up on main lne and rotates 90 deg, creating a + shape
+        .toggler:checked ~ .lines > div:after {
+          top: 0;
+          transform: rotate(90deg);
+        }
+
+        // Entire lines div rotates -45deg and forms X shape
+        .toggler:checked ~ .lines > div {
+          transform: rotate(-45deg);
+        }
+
+        // X shapes rotate again on hover
+        .toggler:checked:hover ~ .lines > div {
+          transform: rotate(45deg);
+        }
+
+        // Overlay for mobile version with menu
+        .overlay {
+          position: absolute;
+          top: 70px;
+          left: -150vw;
+          width: 100vw;
+          height: 100vh;
+          padding: 1rem 0 0 1rem;
+          background: $txt-dark-color;
+          @include flexbox(column, top, left);
+          overflow: hidden;
+          transition: left 0.2s ease-in;
+
+          a {
+            color: $txt-light-color;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: color $two-ms;
+            margin-left: -350px;
+            &:first-child {
+              transition: margin-left $four-ms ease-in-out;
+            }
+            &:nth-child(2) {
+              transition: margin-left calc(#{$two-ms} * 3) ease-in-out;
+            }
+            &:nth-child(3) {
+              transition: margin-left calc(#{$two-ms} * 3.5) ease-in-out;
+            }
+            &:nth-child(4) {
+              transition: margin-left calc(#{$two-ms} * 4) ease-in-out;
+            }
+            &:nth-child(5) {
+              transition: margin-left calc(#{$two-ms} * 5.5) ease-in-out;
+            }
+            &:hover {
+              color: $bg-bright;
+            }
+          }
+        }
+        // Animation of overlay
+        .toggler:checked ~ .overlay {
+          top: 70px;
+          left: 0;
+        }
+        .toggler:checked ~ .overlay > a {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+// Home Section A
+
+#home {
+  &-a {
+    width: 100vw;
+    min-height: 700px;
+    .wraper {
+      width: 100%;
+      height: 100%;
+      .hero-1 {
+        position: relative;
+        width: 100%;
+        min-height: 500px;
+        background: url("/dist/img/Home/img_1.jpg") no-repeat center
+          center/cover;
+        background-position: 50% 70%;
+        @include flexbox(column, center, center);
+        color: $txt-light-color;
+        z-index: -1;
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+        h1 {
+          font-size: 4rem;
+        }
+
+        .dark-overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: $txt-dark-color;
+          opacity: 0.5;
+          z-index: -2;
+        }
+      }
+      .container {
+        width: 95%;
+        border-bottom: 1px solid #dfdfdf;
+
+        p {
+          font-size: 1.5rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

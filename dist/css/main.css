@@ -1,0 +1,243 @@
+.container {
+  max-width: 1280px;
+  margin: auto;
+  overflow: hidden; }
+
+.txt-up {
+  text-transform: uppercase; }
+
+.txt-center {
+  text-align: center; }
+
+.txt-light {
+  font-weight: 300; }
+
+.txt-bold {
+  font-weight: bold; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  overflow-x: hidden; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h3 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif; }
+
+h3 {
+  font: 1.5rem; }
+
+img {
+  width: 100%;
+  display: block; }
+
+#nav-bar {
+  position: fixed;
+  width: 100%;
+  background: #000; }
+  #nav-bar .nav-container {
+    position: relative;
+    max-width: 1280px;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    #nav-bar .nav-container #logo {
+      width: 150px;
+      height: auto;
+      padding: 0 1rem; }
+    #nav-bar .nav-container .nav-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      display: none; }
+      #nav-bar .nav-container .nav-menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        #nav-bar .nav-container .nav-menu ul li a {
+          color: #fff;
+          padding: 0 1rem;
+          transition: color 0.2s; }
+          #nav-bar .nav-container .nav-menu ul li a:hover {
+            color: #ecb607; }
+      #nav-bar .nav-container .nav-menu .social {
+        color: #fff;
+        font-size: 1.4rem; }
+        #nav-bar .nav-container .nav-menu .social a {
+          padding: 0 0.3rem;
+          color: #fff; }
+          #nav-bar .nav-container .nav-menu .social a:first-child:hover {
+            color: #1da1f2; }
+          #nav-bar .nav-container .nav-menu .social a:nth-child(2):hover {
+            color: #bc2a8d; }
+          #nav-bar .nav-container .nav-menu .social a:nth-child(3):hover {
+            color: #4267b2; }
+    #nav-bar .nav-container .nav-hamburger .toggler {
+      position: absolute;
+      top: 5px;
+      right: 16px;
+      width: 60px;
+      height: 60px;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer; }
+    #nav-bar .nav-container .nav-hamburger .lines {
+      position: absolute;
+      top: 5px;
+      right: 16px;
+      height: 60px;
+      width: 60px;
+      padding: 0 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 4; }
+      #nav-bar .nav-container .nav-hamburger .lines div {
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transition: all 0.2s ease; }
+        #nav-bar .nav-container .nav-hamburger .lines div:before {
+          content: "";
+          position: absolute;
+          top: -15px;
+          width: 100%;
+          height: 3px;
+          background: #fff;
+          transition: all 0.1s; }
+        #nav-bar .nav-container .nav-hamburger .lines div:after {
+          content: "";
+          position: absolute;
+          top: 15px;
+          width: 100%;
+          height: 3px;
+          background: #fff;
+          transition: all 0.2s ease; }
+    #nav-bar .nav-container .nav-hamburger .toggler:checked ~ .lines > div:before {
+      top: 0; }
+    #nav-bar .nav-container .nav-hamburger .toggler:checked ~ .lines > div:after {
+      top: 0;
+      transform: rotate(90deg); }
+    #nav-bar .nav-container .nav-hamburger .toggler:checked ~ .lines > div {
+      transform: rotate(-45deg); }
+    #nav-bar .nav-container .nav-hamburger .toggler:checked:hover ~ .lines > div {
+      transform: rotate(45deg); }
+    #nav-bar .nav-container .nav-hamburger .overlay {
+      position: absolute;
+      top: 70px;
+      left: -150vw;
+      width: 100vw;
+      height: 100vh;
+      padding: 1rem 0 0 1rem;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: top;
+      align-items: left;
+      overflow: hidden;
+      transition: left 0.2s ease-in; }
+      #nav-bar .nav-container .nav-hamburger .overlay a {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        transition: color 0.2s;
+        margin-left: -350px; }
+        #nav-bar .nav-container .nav-hamburger .overlay a:first-child {
+          transition: margin-left 0.4s ease-in-out; }
+        #nav-bar .nav-container .nav-hamburger .overlay a:nth-child(2) {
+          transition: margin-left calc(0.2s * 3) ease-in-out; }
+        #nav-bar .nav-container .nav-hamburger .overlay a:nth-child(3) {
+          transition: margin-left calc(0.2s * 3.5) ease-in-out; }
+        #nav-bar .nav-container .nav-hamburger .overlay a:nth-child(4) {
+          transition: margin-left calc(0.2s * 4) ease-in-out; }
+        #nav-bar .nav-container .nav-hamburger .overlay a:nth-child(5) {
+          transition: margin-left calc(0.2s * 5.5) ease-in-out; }
+        #nav-bar .nav-container .nav-hamburger .overlay a:hover {
+          color: #ecb607; }
+    #nav-bar .nav-container .nav-hamburger .toggler:checked ~ .overlay {
+      top: 70px;
+      left: 0; }
+    #nav-bar .nav-container .nav-hamburger .toggler:checked ~ .overlay > a {
+      margin-left: 0; }
+
+#home-a {
+  width: 100vw;
+  min-height: 700px; }
+  #home-a .wraper {
+    width: 100%;
+    height: 100%; }
+    #home-a .wraper .hero-1 {
+      position: relative;
+      width: 100%;
+      min-height: 500px;
+      background: url("/dist/img/Home/img_1.jpg") no-repeat center center/cover;
+      background-position: 50% 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      z-index: -1; }
+      #home-a .wraper .hero-1 h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem; }
+      #home-a .wraper .hero-1 h1 {
+        font-size: 4rem; }
+      #home-a .wraper .hero-1 .dark-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.5;
+        z-index: -2; }
+    #home-a .wraper .container {
+      width: 95%;
+      border-bottom: 1px solid #dfdfdf; }
+      #home-a .wraper .container p {
+        font-size: 1.5rem;
+        line-height: 1.5; }

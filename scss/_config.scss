@@ -1,0 +1,29 @@
+// Veriables
+
+$txt-light-color: #fff;
+$txt-dark-color: #000;
+$txt-main-color: #404040;
+$txt-secondary-color: #1a1a1a;
+$txt-foot-color: #a3a3a3;
+
+$bg-light: #1f1f1f;
+$bg-bright: #ecb607;
+
+$website-width: 1280px;
+
+$two-ms: 0.2s;
+$four-ms: 0.4s;
+// Mixin
+
+@mixin box-sizing($type) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+
+@mixin flexbox($direction, $content, $items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+}
