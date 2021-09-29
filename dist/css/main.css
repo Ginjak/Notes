@@ -201,7 +201,9 @@ img {
           color: #ecb607; }
     #nav-bar .nav-container .nav-hamburger .toggler:checked ~ .overlay {
       top: 70px;
-      left: 0; }
+      left: 0;
+      bottom: 0;
+      right: 0; }
     #nav-bar .nav-container .nav-hamburger .toggler:checked ~ .overlay > a {
       margin-left: 0; }
 
