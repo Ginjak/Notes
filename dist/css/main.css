@@ -283,7 +283,12 @@ img {
   padding-bottom: 2em; }
 
 #home-b .image {
-  width: 90%;
-  max-height: 300px;
-  object-fit: fill;
-  margin: auto; }
+  max-width: 90%;
+  height: 300px;
+  margin: auto;
+  padding-bottom: 2em; }
+
+#home-b .image .face {
+  width: 100%;
+  min-height: 100%;
+  background: url("../img/img_2.jpg") no-repeat center center/cover; }
