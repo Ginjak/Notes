@@ -334,7 +334,8 @@ img {
   margin-bottom: 2em; }
 
 #home-b .btn-light {
-  margin-bottom: 2rem; }
+  margin: 2em 0;
+  margin-bottom: 3em; }
 
 #home-b .btn-light:hover {
   color: #fff;
@@ -376,6 +377,8 @@ img {
     height: 300px;
     background: url("../img/img_4.jpg") no-repeat center center/cover;
     margin-bottom: 2em; }
+  #home-d .btn-light {
+    margin: 3em 0; }
   #home-d .btn-light:hover {
     color: #fff;
     background: #1f1f1f;
@@ -401,6 +404,9 @@ img {
   color: #fff;
   background: #1f1f1f;
   border: 1px solid #1f1f1f; }
+
+#home-e .btn-light {
+  margin: 3em 0; }
 
 #home-f h3 {
   font-size: 1.5rem;
@@ -434,7 +440,8 @@ img {
   #home-g form button {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
-    margin: 2em 0; }
+    margin: 2em 0;
+    display: block; }
   #home-g form .btn-dark:hover {
     background: #404040; }
 
@@ -446,6 +453,8 @@ img {
     padding-bottom: 1em;
     display: block;
     color: #fff; }
+  #footer a:hover {
+    color: #ecb607; }
   #footer p {
     color: #a3a3a3;
     padding-top: 1em; }

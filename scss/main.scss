@@ -305,7 +305,8 @@ img {
     }
 
     .btn-light {
-      margin-bottom: 2rem;
+      margin: 2em 0;
+      margin-bottom: 3em;
     }
     .btn-light:hover {
       color: $txt-light-color;
@@ -364,6 +365,10 @@ img {
       background: url("../img/img_4.jpg") no-repeat center center/cover;
       margin-bottom: 2em;
     }
+
+    .btn-light {
+      margin: 3em 0;
+    }
     .btn-light:hover {
       color: $txt-light-color;
       background: #1f1f1f;
@@ -396,6 +401,10 @@ img {
       background: #1f1f1f;
 
       border: 1px solid #1f1f1f;
+    }
+
+    .btn-light {
+      margin: 3em 0;
     }
   }
 }
@@ -443,6 +452,7 @@ img {
         font-family: "Montserrat", sans-serif;
         font-size: 1rem;
         margin: 2em 0;
+        display: block;
       }
       .btn-dark:hover {
         background: $txt-main-color;
@@ -460,6 +470,9 @@ img {
     padding-bottom: 1em;
     display: block;
     color: $txt-light-color;
+  }
+  a:hover {
+    color: $bg-bright;
   }
 
   p {
