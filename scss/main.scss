@@ -287,10 +287,6 @@ img {
 
 #home {
   &-b {
-    .wraper-2 {
-      width: 90%;
-      margin: 0 auto;
-    }
     h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -314,7 +310,6 @@ img {
     .btn-light:hover {
       color: $txt-light-color;
       background: #1f1f1f;
-      transition: all 0.2s;
       border: 1px solid #1f1f1f;
     }
   }
@@ -339,7 +334,6 @@ img {
         .btn-white:hover {
           background: $txt-light-color;
           color: $txt-main-color;
-          transition: all 0.2s;
         }
 
         h2 {
@@ -354,11 +348,7 @@ img {
 
 #home {
   &-d {
-    .wraper-2 {
-      width: 90%;
-      margin: 0 auto;
-      margin-bottom: 2em;
-    }
+    margin-bottom: 2em;
     h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -374,16 +364,17 @@ img {
       background: url("../img/img_4.jpg") no-repeat center center/cover;
       margin-bottom: 2em;
     }
+    .btn-light:hover {
+      color: $txt-light-color;
+      background: #1f1f1f;
+
+      border: 1px solid #1f1f1f;
+    }
   }
 }
 
 #home {
   &-e {
-    .wraper-2 {
-      width: 90%;
-      margin: 0 auto;
-      margin-bottom: 2em;
-    }
     h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -400,15 +391,17 @@ img {
       background: url("../img/img_5.jpg") no-repeat center center/cover;
       margin-bottom: 2em;
     }
+    .btn-light:hover {
+      color: $txt-light-color;
+      background: #1f1f1f;
+
+      border: 1px solid #1f1f1f;
+    }
   }
 }
 
 #home {
   &-f {
-    .wraper-2 {
-      width: 90%;
-      margin: 0 auto;
-    }
     h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -417,6 +410,43 @@ img {
       font-size: 1.2rem;
       line-height: 1.4;
       padding-bottom: 2em;
+    }
+  }
+}
+
+#home {
+  &-g {
+    form {
+      @include flexbox(column, center, left);
+      label,
+      p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        padding: 0.5em 0;
+      }
+
+      p {
+        margin-top: 1em;
+      }
+
+      label {
+        cursor: pointer;
+      }
+      input[type="email"] {
+        padding: 1em 1em;
+        cursor: pointer;
+        background: $input-grey;
+        border: 1px solid $txt-foot-color;
+        border-radius: 5px;
+      }
+      button {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        margin: 2em 0;
+      }
+      .btn-dark:hover {
+        background: $txt-main-color;
+      }
     }
   }
 }
