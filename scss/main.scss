@@ -450,3 +450,38 @@ img {
     }
   }
 }
+
+#footer {
+  padding: 2em 0;
+  background: $txt-dark-color;
+  color: $txt-light-color;
+
+  a {
+    padding-bottom: 1em;
+    display: block;
+    color: $txt-light-color;
+  }
+
+  p {
+    color: $txt-foot-color;
+    padding-top: 1em;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .social-media a {
+    padding: 1em 0.5em;
+    display: inline-block;
+    &:first-child:hover {
+      color: #1da1f2;
+    }
+    &:nth-child(2):hover {
+      color: #bc2a8d;
+    }
+    &:nth-child(3):hover {
+      color: #4267b2;
+    }
+  }
+}

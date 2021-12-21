@@ -437,3 +437,27 @@ img {
     margin: 2em 0; }
   #home-g form .btn-dark:hover {
     background: #404040; }
+
+#footer {
+  padding: 2em 0;
+  background: #000;
+  color: #fff; }
+  #footer a {
+    padding-bottom: 1em;
+    display: block;
+    color: #fff; }
+  #footer p {
+    color: #a3a3a3;
+    padding-top: 1em; }
+  #footer .social-media {
+    display: flex;
+    justify-content: flex-end; }
+  #footer .social-media a {
+    padding: 1em 0.5em;
+    display: inline-block; }
+    #footer .social-media a:first-child:hover {
+      color: #1da1f2; }
+    #footer .social-media a:nth-child(2):hover {
+      color: #bc2a8d; }
+    #footer .social-media a:nth-child(3):hover {
+      color: #4267b2; }
