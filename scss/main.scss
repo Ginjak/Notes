@@ -287,33 +287,65 @@ img {
 
 #home {
   &-b {
+    .wraper-2 {
+      width: 90%;
+      margin: 0 auto;
+    }
     h3 {
-      padding: 0 1.5rem;
       font-size: 1.5rem;
       margin-bottom: 1rem;
     }
     p {
       font-size: 1.2rem;
       line-height: 1.4;
-      padding: 0em 1em;
       padding-bottom: 2em;
     }
 
-    .image {
-      max-width: 90%;
+    .face {
+      width: 100%;
       height: 300px;
-      margin: auto;
-      padding-bottom: 2em;
-
-      // max-width: 90%;
-      // max-height: 300px;
-      // object-fit: cover;
-      // margin: auto;
+      background: url("../img/img_2.jpg") no-repeat center center/cover;
+      margin-bottom: 2em;
     }
-    .image .face {
+    .image .delivery {
       width: 100%;
       min-height: 100%;
-      background: url("../img/img_2.jpg") no-repeat center center/cover;
+      background: url("../img/img_4.jpg") no-repeat center center/cover;
+    }
+    .btn-light {
+      margin-bottom: 2rem;
+    }
+    .btn-light:hover {
+      color: $txt-light-color;
+      background: #1f1f1f;
+      transition: all 0.2s;
+      border: 1px solid #1f1f1f;
+    }
+
+    .locations {
+      width: 100%;
+      height: 450px;
+      margin-bottom: 2em;
+      background: url("../img/img_3.jpg") no-repeat center center/cover;
+
+      .wraper {
+        width: 100%;
+        height: 100%;
+        @include flexbox(column, center, center);
+        background: rgba(0, 0, 0, 0.5);
+
+        .btn-white:hover {
+          background: $txt-light-color;
+          color: $txt-main-color;
+          transition: all 0.2s;
+        }
+
+        h2 {
+          text-align: center;
+          color: $txt-light-color;
+          padding-bottom: 2rem;
+        }
+      }
     }
   }
 }

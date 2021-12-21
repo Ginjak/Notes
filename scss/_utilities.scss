@@ -13,11 +13,19 @@
 .txt-center {
   text-align: center;
 }
+
+.txt-justify {
+  text-align: justify;
+}
 .txt-light {
   font-weight: 300;
 }
 .txt-bold {
   font-weight: bold;
+}
+
+.txt-space {
+  letter-spacing: 3px;
 }
 
 // Padding top and bottom (Y axis)
@@ -74,6 +82,12 @@
   margin: 4rem 0;
 }
 
+// Margin auto (X axis)
+
+.mx-auto {
+  margin: 0 auto;
+}
+
 // Margin left and right (X axis)
 .mx-1 {
   margin: 0 1rem;
@@ -89,4 +103,38 @@
 
 .mx-4 {
   margin: 0 4rem;
+}
+
+// Buttons
+
+.btn-white {
+  display: block;
+
+  padding: 2em 2em;
+  text-align: center;
+  border-radius: 300px;
+  border: 1px solid $txt-light-color;
+  color: $txt-light-color;
+  cursor: pointer;
+}
+
+.btn-light {
+  display: inline-block;
+  padding: 2em 2em;
+  text-align: center;
+  border-radius: 300px;
+  color: $txt-main-color;
+  border: 1px solid $txt-foot-color;
+  cursor: pointer;
+}
+
+.btn-dark {
+  display: inline-block;
+  width: 350px;
+  padding: 2em 1em;
+  text-align: center;
+  border-radius: 300px;
+  color: $txt-light-color;
+  background: $txt-foot-color;
+  cursor: pointer;
 }
