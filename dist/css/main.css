@@ -12,6 +12,9 @@
 .txt-justify {
   text-align: justify; }
 
+.txt-last-center {
+  text-align-last: center; }
+
 .txt-light {
   font-weight: 300; }
 
@@ -327,11 +330,6 @@ img {
   background: url("../img/img_2.jpg") no-repeat center center/cover;
   margin-bottom: 2em; }
 
-#home-b .image .delivery {
-  width: 100%;
-  min-height: 100%;
-  background: url("../img/img_4.jpg") no-repeat center center/cover; }
-
 #home-b .btn-light {
   margin-bottom: 2rem; }
 
@@ -341,12 +339,12 @@ img {
   transition: all 0.2s;
   border: 1px solid #1f1f1f; }
 
-#home-b .locations {
+#home-c .locations {
   width: 100%;
   height: 450px;
   margin-bottom: 2em;
   background: url("../img/img_3.jpg") no-repeat center center/cover; }
-  #home-b .locations .wraper {
+  #home-c .locations .wraper {
     width: 100%;
     height: 100%;
     display: flex;
@@ -354,11 +352,65 @@ img {
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.5); }
-    #home-b .locations .wraper .btn-white:hover {
+    #home-c .locations .wraper .btn-white:hover {
       background: #fff;
       color: #404040;
       transition: all 0.2s; }
-    #home-b .locations .wraper h2 {
+    #home-c .locations .wraper h2 {
       text-align: center;
       color: #fff;
       padding-bottom: 2rem; }
+
+#home-d .wraper-2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2em; }
+
+#home-d h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+
+#home-d p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  padding-bottom: 2em; }
+
+#home-d .face {
+  width: 100%;
+  height: 300px;
+  background: url("../img/img_4.jpg") no-repeat center center/cover;
+  margin-bottom: 2em; }
+
+#home-e .wraper-2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2em; }
+
+#home-e h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+
+#home-e p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  padding-bottom: 2em; }
+
+#home-e .face {
+  margin-top: 2em;
+  width: 100%;
+  height: 300px;
+  background: url("../img/img_5.jpg") no-repeat center center/cover;
+  margin-bottom: 2em; }
+
+#home-f .wraper-2 {
+  width: 90%;
+  margin: 0 auto; }
+
+#home-f h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+
+#home-f p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  padding-bottom: 2em; }
