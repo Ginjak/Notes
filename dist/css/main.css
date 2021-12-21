@@ -337,7 +337,7 @@ img {
   margin: 2em 0;
   margin-bottom: 3em; }
 
-#home-b .btn-light:hover {
+#home-b .btn-light:hover:focus {
   color: #fff;
   background: #1f1f1f;
   border: 1px solid #1f1f1f; }
