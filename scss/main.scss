@@ -1,5 +1,6 @@
 @import "config";
 @import "utilities";
+
 // General styles
 * {
   margin: 0;
@@ -362,7 +363,7 @@ img {
     .face {
       width: 100%;
       height: 300px;
-      background: url("../img/img_4.jpg") no-repeat center center/cover;
+      background: url("../img/img_4.jpg") no-repeat top center/cover;
       margin-bottom: 2em;
     }
 
@@ -498,3 +499,5 @@ img {
     }
   }
 }
+
+@import "media";

@@ -1,0 +1,28 @@
+// Media 768px
+
+@media only screen and (min-width: $media-tablet) {
+  #footer {
+    .wraper-2 {
+      padding: 2em 0;
+      width: 70%;
+      div:first-child {
+        @include flexbox(row, space-between, center);
+      }
+      div:nth-child(2) {
+        @include flexbox(row, space-between, center);
+      }
+    }
+  }
+}
+
+// #nav-bar .nav-container .nav-menu {
+//   display: block;
+// }
+
+// #nav {
+//   &-bar {
+//     .nav-menu {
+//       background: yellow;
+//     }
+//   }
+// }
