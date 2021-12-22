@@ -506,4 +506,13 @@ img {
     #nav-bar .nav-container .nav-menu .social {
       padding-right: 0.5em; }
   #nav-bar .nav-container .nav-hamburger {
-    display: none; } }
+    display: none; }
+  #home-b .wraper-2 {
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr); }
+    #home-b .wraper-2 .btn-light {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      margin: 2em auto; } }
