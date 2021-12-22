@@ -504,6 +504,6 @@ img {
   #nav-bar .nav-container .nav-menu {
     display: flex; }
     #nav-bar .nav-container .nav-menu .social {
-      padding-right: 1em; }
+      padding-right: 0.5em; }
   #nav-bar .nav-container .nav-hamburger {
     display: none; } }
