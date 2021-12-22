@@ -271,6 +271,7 @@ img {
         }
       }
       .container {
+        width: 90%;
         border-bottom: 1px solid #dfdfdf;
         margin-bottom: 2rem;
 
@@ -350,6 +351,9 @@ img {
 
 #home {
   &-d {
+    max-width: $website-width;
+    margin: auto;
+    overflow: hidden;
     margin-bottom: 2em;
     h3 {
       font-size: 1.5rem;
@@ -381,6 +385,9 @@ img {
 
 #home {
   &-e {
+    max-width: $website-width;
+    margin: auto;
+    overflow: hidden;
     h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -426,6 +433,9 @@ img {
 
 #home {
   &-g {
+    max-width: $website-width;
+    margin: auto;
+    overflow: hidden;
     form {
       @include flexbox(column, center, left);
       label,
@@ -466,7 +476,11 @@ img {
   padding: 2em 0;
   background: $txt-dark-color;
   color: $txt-light-color;
-
+  .wraper-2 {
+    max-width: $website-width;
+    margin: auto;
+    overflow: hidden;
+  }
   a {
     padding-bottom: 1em;
     display: block;

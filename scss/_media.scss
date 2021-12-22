@@ -4,9 +4,12 @@
   #footer {
     .wraper-2 {
       padding: 2em 0;
-      width: 70%;
+      width: 90%;
       div:first-child {
-        @include flexbox(row, space-between, center);
+        @include flexbox(row, flex-start, center);
+        a {
+          padding-right: 1em;
+        }
       }
       div:nth-child(2) {
         @include flexbox(row, space-between, center);
@@ -15,14 +18,24 @@
   }
 }
 
+// Media - Tablet landscape
+
+@media only screen and (min-width: $media-tablet-landscape) {
+  #nav-bar {
+    .nav-container {
+      .nav-menu {
+        display: flex;
+        .social {
+          padding-right: 1em;
+        }
+      }
+      .nav-hamburger {
+        display: none;
+      }
+    }
+  }
+}
+
 // #nav-bar .nav-container .nav-menu {
 //   display: block;
-// }
-
-// #nav {
-//   &-bar {
-//     .nav-menu {
-//       background: yellow;
-//     }
-//   }
 // }
