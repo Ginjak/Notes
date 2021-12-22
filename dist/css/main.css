@@ -522,6 +522,10 @@ img {
       padding-right: 0.5em; }
   #nav-bar .nav-container .nav-hamburger {
     display: none; }
+  #home-a .wraper {
+    padding-bottom: 1em; }
+  #home-a .container {
+    margin-bottom: 5rem; }
   #home-b .wraper-2 {
     display: grid;
     grid-gap: 1rem;
