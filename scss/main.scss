@@ -397,6 +397,14 @@ img {
       line-height: 1.4;
       padding-bottom: 2em;
     }
+    .face-cover {
+      display: none;
+      margin-top: 2em;
+      width: 100%;
+      height: 300px;
+      background: url("../img/img_5.jpg") no-repeat center center/cover;
+      margin-bottom: 2em;
+    }
     .face {
       margin-top: 2em;
       width: 100%;
@@ -413,6 +421,9 @@ img {
 
     .btn-light {
       margin: 3em 0;
+    }
+    .b-line {
+      display: none;
     }
   }
 }
