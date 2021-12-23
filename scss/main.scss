@@ -526,4 +526,91 @@ img {
   }
 }
 
+// Home page media queries
+
 @import "media";
+
+// -----------------------------------
+// -------------- MENU PAGE ----------
+// -----------------------------------
+
+#menu {
+  &-a {
+    width: 100vw;
+    min-height: 550px;
+    .wraper {
+      width: 100%;
+      height: 100%;
+
+      .hero-1 {
+        position: relative;
+        width: 100%;
+        min-height: 550px;
+        background: url("../img/menu_hero.jpg") no-repeat center center/cover;
+        background-position: 50% 70%;
+        @include flexbox(column, center, center);
+        color: $txt-light-color;
+        z-index: -1;
+        h3 {
+          padding: 0 1.5rem;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+
+        .dark-overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: $txt-dark-color;
+          opacity: 0.5;
+          z-index: -2;
+        }
+      }
+      .container {
+        width: 90%;
+        border-bottom: 1px solid #dfdfdf;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+#menu {
+  &-b {
+    h3 {
+      font-size: 2rem;
+      padding: 2em 0 1em 0;
+    }
+    .menu-options {
+      @include flexbox(column, center, center);
+      .btn-light {
+        margin-bottom: 2em;
+      }
+      .btn-light:hover {
+        color: $txt-light-color;
+        background: #1f1f1f;
+        border: 1px solid #1f1f1f;
+      }
+    }
+  }
+}
+
+#menu {
+  &-c {
+    .container {
+      @include flexbox(column, center, center);
+      padding: 3em;
+    }
+    h3 {
+      margin-bottom: 2em;
+    }
+    .btn-light:hover {
+      color: $txt-light-color;
+      background: #1f1f1f;
+      border: 1px solid #1f1f1f;
+    }
+  }
+}
