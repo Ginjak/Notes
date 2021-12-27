@@ -624,12 +624,9 @@ img {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center; }
-  #menu-b .menu-options {
-    display: flex;
-    flex-direction: row; } }
+      align-items: center; } }
 
-@media only screen and (min-width: 768px) and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   #nav-bar .nav-container .nav-menu {
     display: flex; }
     #nav-bar .nav-container .nav-menu .social {
