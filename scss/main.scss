@@ -526,10 +526,6 @@ img {
   }
 }
 
-// Home page media queries
-
-@import "media";
-
 // -----------------------------------
 // -------------- MENU PAGE ----------
 // -----------------------------------
@@ -581,7 +577,7 @@ img {
 #menu {
   &-b {
     h3 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding: 2em 0 1em 0;
     }
     .menu-options {
@@ -602,9 +598,10 @@ img {
   &-c {
     .container {
       @include flexbox(column, center, center);
-      padding: 3em;
+      padding: 5em 0;
     }
     h3 {
+      font-size: 1.5rem;
       margin-bottom: 2em;
     }
     .btn-light:hover {
@@ -614,3 +611,64 @@ img {
     }
   }
 }
+
+#menu {
+  &-newsletter {
+    padding-top: 5em;
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      padding-bottom: 2em;
+    }
+  }
+}
+
+#menu {
+  &-form {
+    padding-bottom: 2em;
+    max-width: $website-width;
+    margin: auto;
+    overflow: hidden;
+    form {
+      @include flexbox(column, center, left);
+      label,
+      p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        padding: 0.5em 0;
+      }
+
+      p {
+        margin-top: 1em;
+      }
+
+      label {
+        cursor: pointer;
+      }
+      input[type="email"] {
+        padding: 1em 1em;
+        cursor: pointer;
+        background: $input-grey;
+        border: 1px solid $txt-foot-color;
+        border-radius: 5px;
+      }
+      button {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        margin: 2em 0;
+        display: block;
+      }
+      .btn-dark:hover {
+        background: $txt-main-color;
+      }
+    }
+  }
+}
+
+// Home page media queries
+
+@import "media";
