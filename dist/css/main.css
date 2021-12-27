@@ -22,6 +22,9 @@
 .txt-light {
   font-weight: 300; }
 
+.txt-normal {
+  font-weight: 400; }
+
 .txt-bold {
   font-weight: bold; }
 
@@ -608,6 +611,92 @@ img {
       display: block; }
     #menu-form form .btn-dark:hover {
       background: #404040; }
+
+#locations-a {
+  width: 100vw;
+  min-height: 550px; }
+  #locations-a .wraper {
+    width: 100%;
+    height: 100%; }
+    #locations-a .wraper .hero-1 {
+      position: relative;
+      width: 100%;
+      min-height: 550px;
+      background: url("../img/locations.jpg") no-repeat center center/cover;
+      background-position: 50% 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      z-index: -1; }
+      #locations-a .wraper .hero-1 h3 {
+        padding: 0 1.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem; }
+      #locations-a .wraper .hero-1 h1 {
+        font-size: 3rem; }
+      #locations-a .wraper .hero-1 .dark-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.5;
+        z-index: -2; }
+    #locations-a .wraper .container {
+      width: 90%;
+      border-bottom: 1px solid #dfdfdf;
+      margin-bottom: 2rem; }
+
+#locations-b .container .wraper-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4em;
+  width: 90%;
+  margin: auto; }
+  #locations-b .container .wraper-2 h3 {
+    font-size: 1.5rem;
+    padding: 4em 0 2em 0;
+    line-height: 1.4; }
+  #locations-b .container .wraper-2 p:nth-child(2) {
+    font-size: 1.5rem;
+    line-height: 1.6; }
+  #locations-b .container .wraper-2 p:nth-child(3) {
+    font-size: 1.5rem;
+    padding: 0.5em 0.2em 2em 0.2em;
+    line-height: 1.6; }
+
+#locations-c .container .card {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 2em; }
+  #locations-c .container .card h3 {
+    font-size: 1.8rem;
+    padding: 0.8em 0;
+    color: #404040; }
+  #locations-c .container .card .card-link,
+  #locations-c .container .card .card-phone {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #404040;
+    font-style: italic;
+    border-bottom: 1px solid #a3a3a3; }
+  #locations-c .container .card .card-link:hover,
+  #locations-c .container .card .card-phone:hover {
+    opacity: 0.8; }
+  #locations-c .container .card p:nth-child(2),
+  #locations-c .container .card p:nth-child(3),
+  #locations-c .container .card p:nth-child(4),
+  #locations-c .container .card p:nth-child(5),
+  #locations-c .container .card p:nth-child(6) {
+    margin-bottom: 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #404040; }
+  #locations-c .container .card span {
+    color: #404040; }
 
 @media only screen and (min-width: 768px) {
   #footer .wraper-2 {
