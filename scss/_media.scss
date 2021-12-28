@@ -37,6 +37,19 @@
         }
       }
     }
+    &-newsletter {
+      .wraper-2 {
+        width: 90%;
+        h3 {
+          font-size: 2rem;
+        }
+      }
+    }
+    &-form {
+      .wraper-2 {
+        width: 90%;
+      }
+    }
   }
 }
 
@@ -228,6 +241,19 @@
             object-fit: cover;
           }
         }
+      }
+    }
+    &-newsletter {
+      .wraper-2 {
+        width: 65%;
+        h3 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    &-form {
+      .wraper-2 {
+        width: 65%;
       }
     }
   }

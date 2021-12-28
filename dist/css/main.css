@@ -704,6 +704,49 @@ img {
   #locations-c .container .card span {
     color: #404040; }
 
+#locations-newsletter {
+  padding-top: 5em; }
+  #locations-newsletter h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+  #locations-newsletter p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding-bottom: 2em; }
+
+#locations-form {
+  padding-bottom: 2em;
+  max-width: 1280px;
+  margin: auto;
+  overflow: hidden; }
+  #locations-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; }
+    #locations-form form label,
+    #locations-form form p {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      padding: 0.5em 0; }
+    #locations-form form p {
+      margin-top: 1em; }
+    #locations-form form label {
+      cursor: pointer; }
+    #locations-form form input[type="email"] {
+      padding: 1em 1em;
+      cursor: pointer;
+      background: #edecec;
+      border: 1px solid #a3a3a3;
+      border-radius: 5px; }
+    #locations-form form button {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      margin: 2em 0;
+      display: block; }
+    #locations-form form .btn-dark:hover {
+      background: #404040; }
+
 @media only screen and (min-width: 768px) {
   #footer .wraper-2 {
     padding: 2em 0;
@@ -728,7 +771,13 @@ img {
     #locations-c .container .card img {
       width: 100%;
       max-height: 230px;
-      object-fit: cover; } }
+      object-fit: cover; }
+  #locations-newsletter .wraper-2 {
+    width: 90%; }
+    #locations-newsletter .wraper-2 h3 {
+      font-size: 2rem; }
+  #locations-form .wraper-2 {
+    width: 90%; } }
 
 @media only screen and (min-width: 950px) {
   #locations-c .container .card img {
@@ -830,7 +879,13 @@ img {
     #locations-c .container .card img {
       width: 100%;
       min-height: 300px;
-      object-fit: cover; } }
+      object-fit: cover; }
+  #locations-newsletter .wraper-2 {
+    width: 65%; }
+    #locations-newsletter .wraper-2 h3 {
+      font-size: 2.5rem; }
+  #locations-form .wraper-2 {
+    width: 65%; } }
 
 @media only screen and (min-width: 1400px) {
   #menu-b .container .btn-light {
