@@ -1,6 +1,8 @@
 // Media 768px
 
 @media only screen and (min-width: $media-tablet) {
+  // Footer
+
   #footer {
     .wraper-2 {
       padding: 2em 0;
@@ -16,6 +18,9 @@
       }
     }
   }
+
+  // Locations
+
   #locations {
     &-c {
       .container {
@@ -35,9 +40,29 @@
   }
 }
 
+// Media for locations card images to be in line
+@media only screen and (min-width: 950px) {
+  // Locations
+
+  #locations {
+    &-c {
+      .container {
+        .card {
+          img {
+            width: 100%;
+            max-height: 280px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Media - Tablet landscape
 
 @media only screen and (min-width: $media-tablet-landscape) {
+  // Nav bar
   #nav-bar {
     .nav-container {
       .nav-menu {
@@ -51,6 +76,9 @@
       }
     }
   }
+
+  // Home
+
   #home-a {
     .wraper {
       padding-bottom: 1em;
@@ -140,7 +168,9 @@
   .b-line {
     width: 60%;
   }
+
   // Menu media quries
+
   #menu {
     &-b {
       .container {
@@ -180,11 +210,34 @@
       margin: auto;
     }
   }
+
+  // Locations
+
+  #locations {
+    &-c {
+      .container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.5em;
+        grid-column-start: 1;
+        .card {
+          img {
+            width: 100%;
+            min-height: 300px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Max media quries
 
 @media only screen and (min-width: $media-max) {
+  // Menu
+
   #menu {
     &-b {
       .container {
