@@ -51,6 +51,64 @@
       }
     }
   }
+
+  // Contactless Pick Up
+
+  #pick-up {
+    &-a {
+      .wraper {
+        max-width: 1024px;
+        margin: auto;
+        @include flexbox(row, space-around, center);
+        .form {
+          width: 100%;
+          input {
+            width: 80%;
+          }
+        }
+        a {
+          width: 80%;
+        }
+        .btn-pick-up {
+          img {
+            left: 42%;
+          }
+        }
+      }
+    }
+  }
+  #pick-up-cards {
+    .pick-up-container {
+      max-width: 1024px;
+      margin: auto;
+      .pick-up-card {
+        display: grid;
+        margin: auto;
+        grid-template-areas: "img txt txt txt2";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        img {
+          width: 125px;
+          height: 125px;
+          grid-area: img;
+        }
+        .pick-up-address {
+          grid-area: txt;
+
+          h3:nth-child(2) {
+            display: none;
+          }
+        }
+        .pick-up-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-end;
+
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 
 // Media for locations card images to be in line
@@ -254,6 +312,18 @@
     &-form {
       .wraper-2 {
         width: 70%;
+      }
+    }
+  }
+  // Contactless Pick Up
+  #pick-up {
+    &-a {
+      .wraper {
+        .btn-pick-up {
+          img {
+            left: 45%;
+          }
+        }
       }
     }
   }

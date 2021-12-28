@@ -847,6 +847,137 @@ img {
   }
 }
 
+// -----------------------------------
+// ---- CONTACTLESS PICK UP PAGE -----
+// -----------------------------------
+
+#pick-up {
+  &-a {
+    padding-top: 70px;
+    margin-bottom: 2em;
+    height: 300px;
+    h2 {
+      padding: 2rem 0;
+    }
+
+    a {
+      margin: 1em auto;
+      padding-top: 22px;
+      display: block;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 10px;
+      width: 80%;
+      height: 60px;
+      color: $txt-main-color;
+      background: $bg-bright;
+      cursor: pointer;
+      transition: all 0.2s;
+      i {
+        padding-right: 0.4em;
+      }
+    }
+
+    a:hover {
+      opacity: 0.9;
+    }
+
+    .form {
+      @include flexbox(row, center, center);
+      input {
+        font-size: 1rem;
+        display: block;
+        width: 80%;
+        height: 60px;
+        padding: 0.25rem 1rem;
+        border-radius: 10px;
+        border: none;
+        background: $input-grey;
+      }
+      input:focus {
+        outline: none;
+      }
+      .btn-pick-up {
+        background: $input-grey;
+        border: none;
+        @include flexbox(column, center, center);
+
+        img {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          transition: all 0.2s;
+          position: absolute;
+          left: 80%;
+        }
+
+        img:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+#pick-up {
+  &-cards {
+    .pick-up-container {
+      width: 100%;
+      .pick-up-card {
+        @include flexbox(row, left, center);
+        align-items: flex-start;
+        padding: 1em 0;
+        margin: 0 auto;
+        width: 80%;
+        border-top: 1px solid $input-grey;
+        img {
+          width: 70px;
+          height: 70px;
+          object-fit: cover;
+          object-position: 50% 70%;
+          border-radius: 10px;
+          margin-right: 2em;
+        }
+        .pick-up-address {
+          h3,
+          p {
+            padding: 0.2em 0;
+            word-wrap: break-word;
+            i {
+              padding-right: 0.4em;
+            }
+          }
+
+          p:nth-child(3) {
+            color: $bg-bright;
+          }
+        }
+        .pick-up-menu {
+          display: none;
+          grid-area: txt2;
+        }
+      }
+      .pick-up-card:hover {
+        cursor: pointer;
+      }
+      .pick-up-card:nth-child(2) p:nth-child(3),
+      .pick-up-card:nth-child(3) p:nth-child(3),
+      .pick-up-card:nth-child(6) p:nth-child(3),
+      .pick-up-card:nth-child(9) p:nth-child(3) {
+        color: $txt-foot-color;
+      }
+      .pick-up-card:nth-child(2) img,
+      .pick-up-card:nth-child(3) img,
+      .pick-up-card:nth-child(6) img,
+      .pick-up-card:nth-child(9) img {
+        filter: brightness(40%);
+        z-index: -2;
+      }
+    }
+  }
+}
+
 // Home page media queries
 
 @import "media";

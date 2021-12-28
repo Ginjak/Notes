@@ -7,6 +7,9 @@
   width: 90%;
   margin: 0 auto; }
 
+.txt-none {
+  text-transform: none; }
+
 .txt-up {
   text-transform: uppercase; }
 
@@ -747,6 +750,108 @@ img {
     #locations-form form .btn-dark:hover {
       background: #404040; }
 
+#pick-up-a {
+  padding-top: 70px;
+  margin-bottom: 2em;
+  height: 300px; }
+  #pick-up-a h2 {
+    padding: 2rem 0; }
+  #pick-up-a a {
+    margin: 1em auto;
+    padding-top: 22px;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 80%;
+    height: 60px;
+    color: #404040;
+    background: #ecb607;
+    cursor: pointer;
+    transition: all 0.2s; }
+    #pick-up-a a i {
+      padding-right: 0.4em; }
+  #pick-up-a a:hover {
+    opacity: 0.9; }
+  #pick-up-a .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    #pick-up-a .form input {
+      font-size: 1rem;
+      display: block;
+      width: 80%;
+      height: 60px;
+      padding: 0.25rem 1rem;
+      border-radius: 10px;
+      border: none;
+      background: #edecec; }
+    #pick-up-a .form input:focus {
+      outline: none; }
+    #pick-up-a .form .btn-pick-up {
+      background: #edecec;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #pick-up-a .form .btn-pick-up img {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        transition: all 0.2s;
+        position: absolute;
+        left: 80%; }
+      #pick-up-a .form .btn-pick-up img:hover {
+        opacity: 0.7;
+        cursor: pointer; }
+
+#pick-up-cards .pick-up-container {
+  width: 100%; }
+  #pick-up-cards .pick-up-container .pick-up-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    align-items: flex-start;
+    padding: 1em 0;
+    margin: 0 auto;
+    width: 80%;
+    border-top: 1px solid #edecec; }
+    #pick-up-cards .pick-up-container .pick-up-card img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      object-position: 50% 70%;
+      border-radius: 10px;
+      margin-right: 2em; }
+    #pick-up-cards .pick-up-container .pick-up-card .pick-up-address h3,
+    #pick-up-cards .pick-up-container .pick-up-card .pick-up-address p {
+      padding: 0.2em 0;
+      word-wrap: break-word; }
+      #pick-up-cards .pick-up-container .pick-up-card .pick-up-address h3 i,
+      #pick-up-cards .pick-up-container .pick-up-card .pick-up-address p i {
+        padding-right: 0.4em; }
+    #pick-up-cards .pick-up-container .pick-up-card .pick-up-address p:nth-child(3) {
+      color: #ecb607; }
+    #pick-up-cards .pick-up-container .pick-up-card .pick-up-menu {
+      display: none;
+      grid-area: txt2; }
+  #pick-up-cards .pick-up-container .pick-up-card:hover {
+    cursor: pointer; }
+  #pick-up-cards .pick-up-container .pick-up-card:nth-child(2) p:nth-child(3),
+  #pick-up-cards .pick-up-container .pick-up-card:nth-child(3) p:nth-child(3),
+  #pick-up-cards .pick-up-container .pick-up-card:nth-child(6) p:nth-child(3),
+  #pick-up-cards .pick-up-container .pick-up-card:nth-child(9) p:nth-child(3) {
+    color: #a3a3a3; }
+  #pick-up-cards .pick-up-container .pick-up-card:nth-child(2) img,
+  #pick-up-cards .pick-up-container .pick-up-card:nth-child(3) img,
+  #pick-up-cards .pick-up-container .pick-up-card:nth-child(6) img,
+  #pick-up-cards .pick-up-container .pick-up-card:nth-child(9) img {
+    filter: brightness(40%);
+    z-index: -2; }
+
 @media only screen and (min-width: 768px) {
   #footer .wraper-2 {
     padding: 2em 0;
@@ -777,7 +882,44 @@ img {
     #locations-newsletter .wraper-2 h3 {
       font-size: 2rem; }
   #locations-form .wraper-2 {
-    width: 90%; } }
+    width: 90%; }
+  #pick-up-a .wraper {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    #pick-up-a .wraper .form {
+      width: 100%; }
+      #pick-up-a .wraper .form input {
+        width: 80%; }
+    #pick-up-a .wraper a {
+      width: 80%; }
+    #pick-up-a .wraper .btn-pick-up img {
+      left: 42%; }
+  #pick-up-cards .pick-up-container {
+    max-width: 1024px;
+    margin: auto; }
+    #pick-up-cards .pick-up-container .pick-up-card {
+      display: grid;
+      margin: auto;
+      grid-template-areas: "img txt txt txt2";
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      #pick-up-cards .pick-up-container .pick-up-card img {
+        width: 125px;
+        height: 125px;
+        grid-area: img; }
+      #pick-up-cards .pick-up-container .pick-up-card .pick-up-address {
+        grid-area: txt; }
+        #pick-up-cards .pick-up-container .pick-up-card .pick-up-address h3:nth-child(2) {
+          display: none; }
+      #pick-up-cards .pick-up-container .pick-up-card .pick-up-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100%; } }
 
 @media only screen and (min-width: 950px) {
   #locations-c .container .card img {
@@ -885,7 +1027,9 @@ img {
     #locations-newsletter .wraper-2 h3 {
       font-size: 2.5rem; }
   #locations-form .wraper-2 {
-    width: 70%; } }
+    width: 70%; }
+  #pick-up-a .wraper .btn-pick-up img {
+    left: 45%; } }
 
 @media only screen and (min-width: 1400px) {
   #menu-b .container .btn-light {
