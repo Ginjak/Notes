@@ -484,6 +484,10 @@ img {
   }
 }
 
+// -----------------------------------
+// -------------- FOOTER--------------
+// -----------------------------------
+
 #footer {
   padding: 2em 0;
   background: $txt-dark-color;
@@ -502,9 +506,12 @@ img {
     color: $bg-bright;
   }
 
+  div:nth-child(2) {
+    @include flexbox(row, space-between, center);
+  }
+
   p {
     color: $txt-foot-color;
-    padding-top: 1em;
   }
 
   .social-media {
@@ -744,7 +751,7 @@ img {
     .container {
       .card {
         width: 90%;
-        margin: auto;
+        margin: 0 auto;
         padding-bottom: 2em;
         h3 {
           font-size: 1.8rem;

@@ -485,9 +485,13 @@ img {
     color: #fff; }
   #footer a:hover {
     color: #ecb607; }
+  #footer div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
   #footer p {
-    color: #a3a3a3;
-    padding-top: 1em; }
+    color: #a3a3a3; }
   #footer .social-media {
     display: flex;
     justify-content: flex-end; }
@@ -670,7 +674,7 @@ img {
 
 #locations-c .container .card {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 2em; }
   #locations-c .container .card h3 {
     font-size: 1.8rem;
@@ -713,7 +717,12 @@ img {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center; } }
+      align-items: center; }
+  #locations-c .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5em;
+    grid-column-start: 1; } }
 
 @media only screen and (min-width: 1024px) {
   #nav-bar .nav-container .nav-menu {
