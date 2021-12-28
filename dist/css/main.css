@@ -675,7 +675,9 @@ img {
 #locations-c .container .card {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column; }
   #locations-c .container .card h3 {
     font-size: 1.8rem;
     padding: 0.8em 0;
@@ -722,7 +724,11 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5em;
-    grid-column-start: 1; } }
+    grid-column-start: 1; }
+    #locations-c .container .card img {
+      width: 100%;
+      max-height: 230px;
+      object-fit: cover; } }
 
 @media only screen and (min-width: 1024px) {
   #nav-bar .nav-container .nav-menu {

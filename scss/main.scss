@@ -753,6 +753,8 @@ img {
         width: 90%;
         margin: 0 auto;
         padding-bottom: 2em;
+        display: flex;
+        flex-direction: column;
         h3 {
           font-size: 1.8rem;
           padding: 0.8em 0;
