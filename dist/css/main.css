@@ -922,7 +922,17 @@ img {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-        height: 100%; } }
+        height: 100%; }
+        #pick-up-cards .pick-up-container .pick-up-card .pick-up-menu .btn-pick-up {
+          display: block;
+          padding: 1em 2em;
+          background: #ecb607;
+          border-radius: 10px;
+          color: #fff;
+          font-weight: 700;
+          transition: all 0.2s; }
+        #pick-up-cards .pick-up-container .pick-up-card .pick-up-menu .btn-pick-up:hover {
+          filter: brightness(0.95); } }
 
 @media only screen and (min-width: 950px) {
   #locations-c .container .card img {
