@@ -745,6 +745,11 @@ img {
           padding: 0.5em 0.2em 2em 0.2em;
           line-height: 1.6;
         }
+        .btn-light:hover {
+          background: $txt-dark-color;
+          color: $txt-light-color;
+          border: 1px solid $txt-dark-color;
+        }
       }
     }
   }
@@ -880,7 +885,7 @@ img {
     }
 
     a:hover {
-      opacity: 0.9;
+      background: #deac08;
     }
 
     .form {

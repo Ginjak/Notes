@@ -675,6 +675,10 @@ img {
     font-size: 1.5rem;
     padding: 0.5em 0.2em 2em 0.2em;
     line-height: 1.6; }
+  #locations-b .container .wraper-2 .btn-light:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000; }
 
 #locations-c .container .card {
   width: 90%;
@@ -773,7 +777,7 @@ img {
     #pick-up-a a i {
       padding-right: 0.4em; }
   #pick-up-a a:hover {
-    opacity: 0.9; }
+    background: #deac08; }
   #pick-up-a .form {
     display: flex;
     flex-direction: row;
