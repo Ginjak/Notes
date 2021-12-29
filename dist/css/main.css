@@ -930,9 +930,7 @@ img {
           border-radius: 10px;
           color: #fff;
           font-weight: 700;
-          transition: all 0.2s; }
-        #pick-up-cards .pick-up-container .pick-up-card .pick-up-menu .btn-pick-up:hover {
-          filter: brightness(0.95); } }
+          transition: all 0.2s; } }
 
 @media only screen and (min-width: 950px) {
   #locations-c .container .card img {
