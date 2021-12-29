@@ -886,7 +886,7 @@ img {
     width: 90%; }
   #pick-up-a .wraper {
     max-width: 1024px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -895,10 +895,12 @@ img {
       width: 100%; }
       #pick-up-a .wraper .form input {
         width: 80%; }
-    #pick-up-a .wraper a {
-      width: 80%; }
+    #pick-up-a .wraper div {
+      width: 100%; }
+      #pick-up-a .wraper div a {
+        width: 80%; }
     #pick-up-a .wraper .btn-pick-up img {
-      left: 42%; }
+      left: 40%; }
   #pick-up-cards .pick-up-container {
     max-width: 1024px;
     margin: auto; }
@@ -998,8 +1000,12 @@ img {
     display: flex;
     flex-direction: row;
     grid-gap: 0.2em; }
+    #menu-b .container .menu-options a {
+      margin: 0.2em; }
   #menu-b .container .btn-light {
     font-size: 0.75rem; }
+  #menu-b .container .b-line {
+    margin-top: 4em; }
   #menu-c .container {
     padding: 7em 0; }
     #menu-c .container h3 {
@@ -1028,12 +1034,16 @@ img {
     #locations-newsletter .wraper-2 h3 {
       font-size: 2.5rem; }
   #locations-form .wraper-2 {
-    width: 70%; }
+    width: 70%; } }
+
+@media only screen and (min-width: 1128px) {
   #pick-up-a .wraper .btn-pick-up img {
-    left: 45%; } }
+    left: 41%; } }
 
 @media only screen and (min-width: 1400px) {
   #menu-b .container .btn-light {
     font-size: 1rem; }
   #menu-b .container .menu-options {
-    grid-gap: 0.6em; } }
+    grid-gap: 0.6em; }
+  #pick-up-a .wraper .btn-pick-up img {
+    left: 43%; } }

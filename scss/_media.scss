@@ -58,7 +58,7 @@
     &-a {
       .wraper {
         max-width: 1024px;
-        margin: auto;
+        margin: 0 auto;
         @include flexbox(row, space-around, center);
         .form {
           width: 100%;
@@ -66,12 +66,15 @@
             width: 80%;
           }
         }
-        a {
-          width: 80%;
+        div {
+          width: 100%;
+          a {
+            width: 80%;
+          }
         }
         .btn-pick-up {
           img {
-            left: 42%;
+            left: 40%;
           }
         }
       }
@@ -254,9 +257,15 @@
           display: flex;
           flex-direction: row;
           grid-gap: 0.2em;
+          a {
+            margin: 0.2em;
+          }
         }
         .btn-light {
           font-size: 0.75rem;
+        }
+        .b-line {
+          margin-top: 4em;
         }
       }
     }
@@ -315,13 +324,17 @@
       }
     }
   }
+}
+@media only screen and (min-width: 1128px) {
+  // Menu
+
   // Contactless Pick Up
   #pick-up {
     &-a {
       .wraper {
         .btn-pick-up {
           img {
-            left: 45%;
+            left: 41%;
           }
         }
       }
@@ -342,6 +355,18 @@
         }
         .menu-options {
           grid-gap: 0.6em;
+        }
+      }
+    }
+  }
+  // Contactless Pick Up
+  #pick-up {
+    &-a {
+      .wraper {
+        .btn-pick-up {
+          img {
+            left: 43%;
+          }
         }
       }
     }
