@@ -589,6 +589,7 @@ img {
     }
     .menu-options {
       @include flexbox(column, center, center);
+      padding: 0 1em;
       .btn-light {
         margin-bottom: 2em;
       }

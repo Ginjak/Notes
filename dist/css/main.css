@@ -552,7 +552,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 0 1em; }
   #menu-b .menu-options .btn-light {
     margin-bottom: 2em; }
   #menu-b .menu-options .btn-light:hover {
