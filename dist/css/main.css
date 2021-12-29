@@ -564,6 +564,9 @@ img {
     background: #1f1f1f;
     border: 1px solid #1f1f1f; }
 
+#menu-b .b-line {
+  width: 90%; }
+
 #menu-c .container {
   display: flex;
   flex-direction: column;
@@ -702,7 +705,8 @@ img {
     border-bottom: 1px solid #a3a3a3; }
   #locations-c .container .card .card-link:hover,
   #locations-c .container .card .card-phone:hover {
-    opacity: 0.8; }
+    color: #aba7a7;
+    border-color: #aba7a7; }
   #locations-c .container .card p:nth-child(2),
   #locations-c .container .card p:nth-child(3),
   #locations-c .container .card p:nth-child(4),
@@ -919,6 +923,8 @@ img {
     font-size: 1.4rem;
     line-height: 1.4;
     margin-bottom: 3em; }
+  #bookings-b .container .b-line {
+    width: 90%; }
 
 #bookings-c .container {
   max-width: 950px;
@@ -972,12 +978,47 @@ img {
       border: 1px solid #ecb607;
       color: #404040; }
 
-#bookings-newsletter {
+#bookings-d .container {
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#bookings-d h3 {
+  font-size: 1.5rem;
+  margin: 2em 0 2em 0; }
+
+#bookings-d p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  padding: 2em 1em; }
+  #bookings-d p a {
+    color: #404040;
+    font-style: italic;
+    border-bottom: 1px solid #a3a3a3;
+    padding-bottom: 0.2em; }
+  #bookings-d p a:hover {
+    color: #aba7a7;
+    border-color: #aba7a7; }
+
+#bookings-d .b-line {
+  margin: 1em 0;
+  width: 90%; }
+
+#bookings-d .btn-light:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000; }
+
+#bookings-newsletter .wraper-2 {
+  max-width: 950px;
   padding-top: 5em; }
-  #bookings-newsletter h3 {
+  #bookings-newsletter .wraper-2 h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem; }
-  #bookings-newsletter p {
+  #bookings-newsletter .wraper-2 p {
     font-size: 1.2rem;
     line-height: 1.4;
     padding-bottom: 2em; }
@@ -987,33 +1028,35 @@ img {
   max-width: 1280px;
   margin: auto;
   overflow: hidden; }
-  #bookings-form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left; }
-    #bookings-form form label,
-    #bookings-form form p {
-      font-size: 1.2rem;
-      line-height: 1.4;
-      padding: 0.5em 0; }
-    #bookings-form form p {
-      margin-top: 1em; }
-    #bookings-form form label {
-      cursor: pointer; }
-    #bookings-form form input[type="email"] {
-      padding: 1em 1em;
-      cursor: pointer;
-      background: #edecec;
-      border: 1px solid #a3a3a3;
-      border-radius: 5px; }
-    #bookings-form form button {
-      font-family: "Montserrat", sans-serif;
-      font-size: 1rem;
-      margin: 2em 0;
-      display: block; }
-    #bookings-form form .btn-dark:hover {
-      background: #404040; }
+  #bookings-form .wraper-2 {
+    max-width: 950px; }
+    #bookings-form .wraper-2 form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left; }
+      #bookings-form .wraper-2 form label,
+      #bookings-form .wraper-2 form p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        padding: 0.5em 0; }
+      #bookings-form .wraper-2 form p {
+        margin-top: 1em; }
+      #bookings-form .wraper-2 form label {
+        cursor: pointer; }
+      #bookings-form .wraper-2 form input[type="email"] {
+        padding: 1em 1em;
+        cursor: pointer;
+        background: #edecec;
+        border: 1px solid #a3a3a3;
+        border-radius: 5px; }
+      #bookings-form .wraper-2 form button {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        margin: 2em 0;
+        display: block; }
+      #bookings-form .wraper-2 form .btn-dark:hover {
+        background: #404040; }
 
 @media only screen and (min-width: 768px) {
   #footer .wraper-2 {

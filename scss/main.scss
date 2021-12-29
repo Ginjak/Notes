@@ -603,6 +603,9 @@ img {
         border: 1px solid #1f1f1f;
       }
     }
+    .b-line {
+      width: 90%;
+    }
   }
 }
 
@@ -780,7 +783,8 @@ img {
         }
         .card-link:hover,
         .card-phone:hover {
-          opacity: 0.8;
+          color: #aba7a7;
+          border-color: #aba7a7;
         }
         p:nth-child(2),
         p:nth-child(3),
@@ -1061,6 +1065,9 @@ img {
         line-height: 1.4;
         margin-bottom: 3em;
       }
+      .b-line {
+        width: 90%;
+      }
     }
   }
 }
@@ -1131,16 +1138,59 @@ img {
 }
 
 #bookings {
-  &-newsletter {
-    padding-top: 5em;
+  &-d {
+    .container {
+      max-width: 950px;
+      margin: 0 auto;
+      @include flexbox(column, center, center);
+    }
     h3 {
       font-size: 1.5rem;
-      margin-bottom: 1rem;
+      margin: 2em 0 2em 0;
     }
     p {
       font-size: 1.2rem;
       line-height: 1.4;
-      padding-bottom: 2em;
+      padding: 2em 1em;
+
+      a {
+        color: $txt-main-color;
+        font-style: italic;
+        border-bottom: 1px solid $txt-foot-color;
+        padding-bottom: 0.2em;
+      }
+
+      a:hover {
+        color: #aba7a7;
+        border-color: #aba7a7;
+      }
+    }
+    .b-line {
+      margin: 1em 0;
+      width: 90%;
+    }
+    .btn-light:hover {
+      background: $txt-dark-color;
+      color: $txt-light-color;
+      border: 1px solid $txt-dark-color;
+    }
+  }
+}
+#bookings {
+  &-newsletter {
+    .wraper-2 {
+      max-width: 950px;
+
+      padding-top: 5em;
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        padding-bottom: 2em;
+      }
     }
   }
 }
@@ -1151,37 +1201,41 @@ img {
     max-width: $website-width;
     margin: auto;
     overflow: hidden;
-    form {
-      @include flexbox(column, center, left);
-      label,
-      p {
-        font-size: 1.2rem;
-        line-height: 1.4;
-        padding: 0.5em 0;
-      }
+    .wraper-2 {
+      max-width: 950px;
 
-      p {
-        margin-top: 1em;
-      }
+      form {
+        @include flexbox(column, center, left);
+        label,
+        p {
+          font-size: 1.2rem;
+          line-height: 1.4;
+          padding: 0.5em 0;
+        }
 
-      label {
-        cursor: pointer;
-      }
-      input[type="email"] {
-        padding: 1em 1em;
-        cursor: pointer;
-        background: $input-grey;
-        border: 1px solid $txt-foot-color;
-        border-radius: 5px;
-      }
-      button {
-        font-family: "Montserrat", sans-serif;
-        font-size: 1rem;
-        margin: 2em 0;
-        display: block;
-      }
-      .btn-dark:hover {
-        background: $txt-main-color;
+        p {
+          margin-top: 1em;
+        }
+
+        label {
+          cursor: pointer;
+        }
+        input[type="email"] {
+          padding: 1em 1em;
+          cursor: pointer;
+          background: $input-grey;
+          border: 1px solid $txt-foot-color;
+          border-radius: 5px;
+        }
+        button {
+          font-family: "Montserrat", sans-serif;
+          font-size: 1rem;
+          margin: 2em 0;
+          display: block;
+        }
+        .btn-dark:hover {
+          background: $txt-main-color;
+        }
       }
     }
   }
