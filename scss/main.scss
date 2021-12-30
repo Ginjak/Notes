@@ -993,7 +993,7 @@ img {
 }
 
 // -----------------------------------
-// ---- BOOKINGS PAGE -----
+// ---- BOOKINGS PAGE ----------------
 // -----------------------------------
 
 #bookings {
@@ -1236,6 +1236,57 @@ img {
         .btn-dark:hover {
           background: $txt-main-color;
         }
+      }
+    }
+  }
+}
+
+// -----------------------------------
+// ---- TRADE & ENQUIRIES PAGE -----
+// -----------------------------------
+
+#trade {
+  &-a {
+    width: 100vw;
+    min-height: 550px;
+    .wraper {
+      width: 100%;
+      height: 100%;
+
+      .hero-1 {
+        position: relative;
+        width: 100%;
+        min-height: 550px;
+        background: url("../img/coffee.jpg") no-repeat center center/cover;
+        background-position: 50% 70%;
+        @include flexbox(column, center, center);
+        color: $txt-light-color;
+        z-index: -1;
+        h3 {
+          padding: 0 1.5rem;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+
+        .dark-overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: $txt-dark-color;
+          opacity: 0.5;
+          z-index: -2;
+        }
+      }
+    }
+  }
+  &-b {
+    .container {
+      @include flexbox(column, center, center);
+      h2 {
+        padding: 2em 0;
       }
     }
   }

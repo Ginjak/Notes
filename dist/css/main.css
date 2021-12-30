@@ -1058,6 +1058,46 @@ img {
       #bookings-form .wraper-2 form .btn-dark:hover {
         background: #404040; }
 
+#trade-a {
+  width: 100vw;
+  min-height: 550px; }
+  #trade-a .wraper {
+    width: 100%;
+    height: 100%; }
+    #trade-a .wraper .hero-1 {
+      position: relative;
+      width: 100%;
+      min-height: 550px;
+      background: url("../img/coffee.jpg") no-repeat center center/cover;
+      background-position: 50% 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      z-index: -1; }
+      #trade-a .wraper .hero-1 h3 {
+        padding: 0 1.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem; }
+      #trade-a .wraper .hero-1 h1 {
+        font-size: 3rem; }
+      #trade-a .wraper .hero-1 .dark-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.5;
+        z-index: -2; }
+
+#trade-b .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #trade-b .container h2 {
+    padding: 2em 0; }
+
 @media only screen and (min-width: 768px) {
   #footer .wraper-2 {
     padding: 2em 0;
@@ -1130,6 +1170,7 @@ img {
         height: 100%; }
         #pick-up-cards .pick-up-container .pick-up-card .pick-up-menu .btn-pick-up {
           display: block;
+          text-align: center;
           padding: 1em 2em;
           background: #ecb607;
           border-radius: 10px;
