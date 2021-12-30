@@ -1096,7 +1096,34 @@ img {
   justify-content: center;
   align-items: center; }
   #trade-b .container h2 {
-    padding: 2em 0; }
+    font-size: 1.6rem;
+    padding: 2em 1em;
+    text-align: center;
+    font-weight: 600; }
+  #trade-b .container .btn-light:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000; }
+
+#trade-c .container .trade-txt {
+  margin-bottom: 2em; }
+  #trade-c .container .trade-txt p {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6; }
+  #trade-c .container .trade-txt p:nth-child(2) {
+    padding-bottom: 0.5em; }
+  #trade-c .container .trade-txt a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #404040;
+    border-bottom: 1px solid #a3a3a3;
+    padding-bottom: 0.2em;
+    transition: all 0.2s; }
+  #trade-c .container .trade-txt a:hover {
+    color: #a3a3a3;
+    border-color: #edecec; }
 
 @media only screen and (min-width: 768px) {
   #footer .wraper-2 {

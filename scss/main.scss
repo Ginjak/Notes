@@ -1286,7 +1286,43 @@ img {
     .container {
       @include flexbox(column, center, center);
       h2 {
-        padding: 2em 0;
+        font-size: 1.6rem;
+        padding: 2em 1em;
+        text-align: center;
+        font-weight: 600;
+      }
+      .btn-light:hover {
+        background: $txt-dark-color;
+        color: $txt-light-color;
+        border: 1px solid $txt-dark-color;
+      }
+    }
+  }
+  &-c {
+    .container {
+      .trade-txt {
+        margin-bottom: 2em;
+        p {
+          text-align: left;
+          font-size: 1.2rem;
+          line-height: 1.6;
+        }
+        p:nth-child(2) {
+          padding-bottom: 0.5em;
+        }
+        a {
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 1.6;
+          color: $txt-main-color;
+          border-bottom: 1px solid $txt-foot-color;
+          padding-bottom: 0.2em;
+          transition: all 0.2s;
+        }
+        a:hover {
+          color: $txt-foot-color;
+          border-color: $input-grey;
+        }
       }
     }
   }
