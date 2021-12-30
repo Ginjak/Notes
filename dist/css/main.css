@@ -1185,12 +1185,8 @@ img {
     flex-direction: row;
     justify-content: left;
     align-items: left; }
-    #trade-enquiry .container .trade-form form div:nth-child(6) input:first-child {
-      padding: 0.5em 0 0.5em 1em;
-      width: 57px;
-      color: #a3a3a3; }
     #trade-enquiry .container .trade-form form div:nth-child(6) input:last-child {
-      padding: 0.5em 0;
+      padding: 0.5em 1em;
       width: 100%;
       color: #a3a3a3;
       text-align: left; }

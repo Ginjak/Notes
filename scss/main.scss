@@ -1389,15 +1389,9 @@ img {
           }
           div:nth-child(6) {
             @include flexbox(row, left, left);
-            input:first-child {
-              padding: 0.5em 0 0.5em 1em;
-
-              width: 57px;
-              color: $txt-foot-color;
-            }
 
             input:last-child {
-              padding: 0.5em 0;
+              padding: 0.5em 1em;
               width: 100%;
               color: $txt-foot-color;
               text-align: left;
