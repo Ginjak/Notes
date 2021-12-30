@@ -1165,7 +1165,8 @@ img {
     padding: 0.5em 1em;
     font-size: 1rem;
     margin-bottom: 1em;
-    color: #a3a3a3; }
+    color: #a3a3a3;
+    width: 90%; }
   #trade-enquiry .container .trade-form form select {
     max-width: 250px; }
   #trade-enquiry .container .trade-form form option {
@@ -1177,9 +1178,10 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0em; }
+    padding: 0 0em;
+    width: 90%; }
     #trade-enquiry .container .trade-form form .names input {
-      width: 90%; }
+      width: 100%; }
   #trade-enquiry .container .trade-form form div:nth-child(6) {
     display: flex;
     flex-direction: row;
@@ -1187,10 +1189,11 @@ img {
     align-items: left; }
     #trade-enquiry .container .trade-form form div:nth-child(6) input:last-child {
       padding: 0.5em 1em;
-      width: 100%;
+      width: 90%;
       color: #a3a3a3;
       text-align: left; }
   #trade-enquiry .container .trade-form form label {
+    width: 100%;
     padding: 1em 0;
     color: #404040; }
   #trade-enquiry .container .trade-form form .trade-radio {
