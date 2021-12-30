@@ -1306,6 +1306,7 @@ img {
           text-align: left;
           font-size: 1.2rem;
           line-height: 1.6;
+          padding-bottom: 2em;
         }
         p:nth-child(2) {
           padding-bottom: 0.5em;
@@ -1322,6 +1323,111 @@ img {
         a:hover {
           color: $txt-foot-color;
           border-color: $input-grey;
+        }
+      }
+      .trade-video {
+        position: relative;
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+        padding-top: 56.25%;
+
+        .video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  &-enquiry {
+    .container {
+      h3 {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 2em 0;
+      }
+      .trade-form {
+        form {
+          width: 90%;
+          max-width: 800px;
+          margin: auto;
+          @include flexbox(column, center, left);
+          input[type="text"],
+          input[type="email"],
+          select {
+            appearance: none;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid $txt-foot-color;
+            padding: 0.5em 1em;
+            font-size: 1rem;
+            margin-bottom: 1em;
+            color: $txt-foot-color;
+          }
+          select {
+            max-width: 250px;
+          }
+          option {
+            color: $txt-foot-color;
+          }
+
+          input::placeholder {
+            color: $txt-foot-color;
+          }
+          .names {
+            @include flexbox(row, space-between, center);
+            padding: 0 0em;
+            input {
+              width: 90%;
+            }
+          }
+          div:nth-child(6) {
+            @include flexbox(row, left, left);
+            input:first-child {
+              padding: 0.5em 0 0.5em 1em;
+
+              width: 57px;
+              color: $txt-foot-color;
+            }
+
+            input:last-child {
+              padding: 0.5em 0;
+              width: 100%;
+              color: $txt-foot-color;
+              text-align: left;
+            }
+          }
+          label {
+            padding: 1em 0;
+            color: $txt-main-color;
+          }
+          .trade-radio {
+            @include flexbox(column, center, left);
+            label {
+              padding: 0.5em 0;
+            }
+            input {
+              margin: 0 1em;
+            }
+          }
+          textarea {
+            max-width: 450px;
+            height: 100px;
+            margin-bottom: 2em;
+          }
+          button {
+            width: fit-content;
+            margin-bottom: 2em;
+          }
+          button:hover {
+            background: $txt-main-color;
+          }
         }
       }
     }

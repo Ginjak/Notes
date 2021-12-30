@@ -1110,7 +1110,8 @@ img {
   #trade-c .container .trade-txt p {
     text-align: left;
     font-size: 1.2rem;
-    line-height: 1.6; }
+    line-height: 1.6;
+    padding-bottom: 2em; }
   #trade-c .container .trade-txt p:nth-child(2) {
     padding-bottom: 0.5em; }
   #trade-c .container .trade-txt a {
@@ -1124,6 +1125,96 @@ img {
   #trade-c .container .trade-txt a:hover {
     color: #a3a3a3;
     border-color: #edecec; }
+
+#trade-c .container .trade-video {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 56.25%; }
+  #trade-c .container .trade-video .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+
+#trade-enquiry .container h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 2em 0; }
+
+#trade-enquiry .container .trade-form form {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left; }
+  #trade-enquiry .container .trade-form form input[type="text"],
+  #trade-enquiry .container .trade-form form input[type="email"],
+  #trade-enquiry .container .trade-form form select {
+    appearance: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #a3a3a3;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    margin-bottom: 1em;
+    color: #a3a3a3; }
+  #trade-enquiry .container .trade-form form select {
+    max-width: 250px; }
+  #trade-enquiry .container .trade-form form option {
+    color: #a3a3a3; }
+  #trade-enquiry .container .trade-form form input::placeholder {
+    color: #a3a3a3; }
+  #trade-enquiry .container .trade-form form .names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0em; }
+    #trade-enquiry .container .trade-form form .names input {
+      width: 90%; }
+  #trade-enquiry .container .trade-form form div:nth-child(6) {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left; }
+    #trade-enquiry .container .trade-form form div:nth-child(6) input:first-child {
+      padding: 0.5em 0 0.5em 1em;
+      width: 57px;
+      color: #a3a3a3; }
+    #trade-enquiry .container .trade-form form div:nth-child(6) input:last-child {
+      padding: 0.5em 0;
+      width: 100%;
+      color: #a3a3a3;
+      text-align: left; }
+  #trade-enquiry .container .trade-form form label {
+    padding: 1em 0;
+    color: #404040; }
+  #trade-enquiry .container .trade-form form .trade-radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; }
+    #trade-enquiry .container .trade-form form .trade-radio label {
+      padding: 0.5em 0; }
+    #trade-enquiry .container .trade-form form .trade-radio input {
+      margin: 0 1em; }
+  #trade-enquiry .container .trade-form form textarea {
+    max-width: 450px;
+    height: 100px;
+    margin-bottom: 2em; }
+  #trade-enquiry .container .trade-form form button {
+    width: fit-content;
+    margin-bottom: 2em; }
+  #trade-enquiry .container .trade-form form button:hover {
+    background: #404040; }
 
 @media only screen and (min-width: 768px) {
   #footer .wraper-2 {

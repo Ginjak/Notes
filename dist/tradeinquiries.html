@@ -84,8 +84,67 @@
     <a href="story.html" class="mx-1">Read more about our story ></a>
   </div>
   <div class="trade-video">
-    <iframe src="https://vimeo.com/344032099?embedded=true&source=video_title&owner=100069728" frameborder="0"></iframe>
+    <iframe class="video" src="https://player.vimeo.com/video/344032099?h=9b0c809386" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
   </div>
+ <section id="trade-enquiry">
+   <div class="container">
+     <h3>WANT TO KNOW MORE?</h3>
+     <div class="trade-form">
+       <form name="Trade enquries" method="POST" data-netlify="true">
+        <div class="names">
+          <input type="text" placeholder="First Name">
+          <input type="text" placeholder="Last Name">
+        </div>
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Contact number">
+        <input type="text" placeholder="Company name">
+        <input type="text" placeholder="Country">
+        <div>
+        <input type="text" value="http://" readonly>
+        <input type="text" placeholder="yourwebsite.com">
+      </div>
+      <label for="business">Type of business &nbsp;*</label>
+      <select name="business" id="business">
+        <option value=""></option>
+        <option value="Coffee Shop">Coffee Shop</option>
+        <option value="Cafe">Cafe</option>
+        <option value="Deli">Deli</option>
+        <option value="Restaurant">Restaurant</option>
+        <option value="Hotel">Hotel</option>
+        <option value="Bar">Bar</option>
+        <option value="Catering">Catering</option>
+        <option value="Office">Office</option>
+        <option value="Other">Other</option>
+      </select>
+      <div class="trade-radio">
+      <label for="">Which roasting style are you interested in?</label>
+      <label><input name="empty" type="radio">Espresso</label>
+      <label><input name="empty" type="radio">Filter</label>
+      <label><input name="empty" type="radio">Both</label>
+    </div>
+
+    <div class="trade-radio">
+      <label for="">Would you like machine support?</label>
+      <label><input name="empty" type="radio">Yes</label>
+      <label><input name="empty" type="radio">No</label>
+    </div>
+
+    <div class="trade-radio">
+      <label for="">Do you need barista training?</label>
+      <label><input name="empty" type="radio">Yes</label>
+      <label><input name="empty" type="radio">No</label>
+    </div>
+
+    <label for="comments">Any other comments</label>
+    <textarea name="comments" id="comments"></textarea>
+
+    <button class="btn-dark txt-up txt-bold txt-space">Submit</button>
+ 
+       </form>
+     </div>
+   </div>
+ </section>
 </div>
 </section>
 <footer id="footer">
