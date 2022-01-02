@@ -1393,7 +1393,15 @@ img {
     #locations-newsletter .wraper-2 h3 {
       font-size: 2.5rem; }
   #locations-form .wraper-2 {
-    width: 70%; } }
+    width: 70%; }
+  #trade-c .container {
+    display: flex; }
+    #trade-c .container .trade-txt {
+      width: 80%;
+      text-align: left;
+      align-items: left; }
+    #trade-c .container .trade-video {
+      margin-top: 0; } }
 
 @media only screen and (min-width: 1128px) {
   #pick-up-a .wraper .btn-pick-up img {
