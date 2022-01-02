@@ -49,6 +49,7 @@ img {
     position: fixed;
     width: 100%;
     background: $txt-dark-color;
+    z-index: 5;
 
     // Navigation container with main nav and hamburger
     .nav-container {
@@ -1326,22 +1327,8 @@ img {
         }
       }
       .trade-video {
-        position: relative;
         width: 90%;
         margin: auto;
-        overflow: hidden;
-        padding-top: 56.25%;
-
-        .video {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-        }
       }
     }
   }
