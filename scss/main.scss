@@ -1376,21 +1376,13 @@ img {
               width: 100%;
             }
           }
-          div:nth-child(6) {
-            @include flexbox(row, left, left);
 
-            input:last-child {
-              padding: 0.5em 1em;
-              width: 90%;
-              color: $txt-foot-color;
-              text-align: left;
-            }
-          }
           label {
             width: 100%;
             padding: 1em 0;
             color: $txt-main-color;
           }
+
           .trade-radio {
             @include flexbox(column, center, left);
             label {
@@ -1404,6 +1396,15 @@ img {
             max-width: 450px;
             height: 100px;
             margin-bottom: 2em;
+            appearance: none;
+            border: none;
+            outline: none;
+            border: 1px solid $txt-foot-color;
+            border-radius: 10px;
+            padding: 0.5em 1em;
+            font-size: 1rem;
+            margin-bottom: 1em;
+            color: $txt-foot-color;
           }
           button {
             width: fit-content;
